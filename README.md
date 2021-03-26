@@ -1,3 +1,4 @@
+```javascript
 import { JR.VIJAXX, Bio } from "portfolio"
 
 class AboutMe extends JR.VIJAXX.Bio {
@@ -26,3 +27,4 @@ class AboutMe extends JR.VIJAXX.Bio {
 }
 
 export default AboutMe
+```
