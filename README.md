@@ -1,16 +1,28 @@
-### Hi there 👋
+import { JR.VIJAXX, Bio } from "portfolio"
 
-<!--
-**jrvijaxx/jrvijaxx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+class AboutMe extends JR.VIJAXX.Bio {
+  const getDailyKnowledge = () => {
+    return (
+		[
+		    id: 1, name: 'SCSS',
+		    id: 2, name: 'JavaScript',
+		    id: 3, name: 'React',
+		    id: 4, name: 'GSAP'
+		 ]
+	   )
+     }
 
-Here are some ideas to get you started:
+    render (
+      return (
+	 <div>
+	    {getDailyKnowledge().map(item => {
+		return(
+		  {item.id} {item.name}
+		)
+	    })}
+	 </div>
+	)
+    )
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+export default AboutMe
